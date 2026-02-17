@@ -27,16 +27,6 @@
   <p>Adım: İstediğin layout için <b>Copy</b> → Gmail <b>Settings → Signature</b> alanına yapıştır → <b>Save Changes</b>.</p>
   <p class="note">Not: Bu sayfadaki “Copy” butonu HTML’i panoya kopyalar. Gmail’de ekstra “link ekle” işlemi gerekmez.</p>
 
-  <!-- Common links -->
-  <script>
-    const LINKS = {
-      ig: "https://www.instagram.com/codeway/?hl=en",
-      yt: "https://www.youtube.com/@codewaystudios",
-      li: "https://www.linkedin.com/company/codeway",
-      web: "https://codeway.co"
-    };
-  </script>
-
   <!-- ===== Layout 1 ===== -->
   <div class="card">
     <div class="row">
@@ -46,34 +36,46 @@
         <span id="ok1" class="ok">Kopyalandı ✅</span>
       </div>
     </div>
-    <div class="hint">Özellik: Sol logo + sosyal ikonlar, sağ metin, sağda GPTW badge, slogan var.</div>
+    <div class="hint">Özellik: Sol logo + sosyal ikonlar (uç ortalı), sağ metin, altta küçük GPTW badge, slogan var.</div>
     <div class="sigbox" id="sig1">
       <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.35; color:#111;">
         <tr>
-          <td style="vertical-align: top; padding-right: 16px;">
-            <img src="https://i.ibb.co/XrG010pg/logo.png" width="110" alt="Codeway" style="display:block; border:0; outline:none;">
-            <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px;">
+          <!-- Left / Logo + socials -->
+          <td style="vertical-align: top; padding-right: 16px; width: 140px;">
+            <table cellpadding="0" cellspacing="0" border="0" style="width:140px;">
               <tr>
-                <td style="padding-right: 8px;">
-                  <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
-                  </a>
+                <td style="text-align:center;">
+                  <img src="https://i.ibb.co/XrG010pg/logo.png" width="120" alt="Codeway" style="display:block; border:0; outline:none; margin:0 auto;">
                 </td>
-                <td style="padding-right: 8px;">
-                  <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
-                  </a>
-                </td>
-                <td>
-                  <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
-                  </a>
+              </tr>
+              <tr>
+                <td style="text-align:center; padding-top: 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
+                    <tr>
+                      <td style="padding-right: 8px;">
+                        <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                      <td style="padding-right: 8px;">
+                        <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
           </td>
 
-          <td style="vertical-align: top; padding-right: 16px;">
+          <!-- Right / Text -->
+          <td style="vertical-align: top;">
             <div style="font-size: 16px; font-weight: 700;">Name Surname</div>
             <div style="font-weight: 600; margin-top: 2px;">Job Title</div>
 
@@ -93,10 +95,11 @@
               <a href="https://codeway.co" target="_blank" style="color:#111; text-decoration:none; font-weight:600;">codeway.co</a><br>
               <span style="color:#666;">Powering Ambitious Builders at Scale.</span>
             </div>
-          </td>
 
-          <td style="vertical-align: top;">
-            <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="86" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+            <!-- GPTW badge (small, under text group) -->
+            <div style="margin-top: 12px;">
+              <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="62" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+            </div>
           </td>
         </tr>
       </table>
@@ -112,34 +115,44 @@
         <span id="ok2" class="ok">Kopyalandı ✅</span>
       </div>
     </div>
-    <div class="hint">Özellik: Alternatif logo, GPTW badge var, slogan yok (daha kısa).</div>
+    <div class="hint">Özellik: Alternatif logo, sosyal ikonlar (uç ortalı), altta küçük GPTW badge, slogan yok (daha kısa).</div>
     <div class="sigbox" id="sig2">
       <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.35; color:#111;">
         <tr>
-          <td style="vertical-align: top; padding-right: 16px;">
-            <img src="https://i.ibb.co/bjPG8Ljc/logo-pack-03-1.png" width="120" alt="Codeway" style="display:block; border:0; outline:none;">
-            <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px;">
+          <td style="vertical-align: top; padding-right: 16px; width: 140px;">
+            <table cellpadding="0" cellspacing="0" border="0" style="width:140px;">
               <tr>
-                <td style="padding-right: 8px;">
-                  <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
-                  </a>
+                <td style="text-align:center;">
+                  <img src="https://i.ibb.co/bjPG8Ljc/logo-pack-03-1.png" width="120" alt="Codeway" style="display:block; border:0; outline:none; margin:0 auto;">
                 </td>
-                <td style="padding-right: 8px;">
-                  <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
-                  </a>
-                </td>
-                <td>
-                  <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
-                  </a>
+              </tr>
+              <tr>
+                <td style="text-align:center; padding-top: 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
+                    <tr>
+                      <td style="padding-right: 8px;">
+                        <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                      <td style="padding-right: 8px;">
+                        <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
           </td>
 
-          <td style="vertical-align: top; padding-right: 16px;">
+          <td style="vertical-align: top;">
             <div style="font-size: 16px; font-weight: 700;">Name Surname</div>
             <div style="font-weight: 600; margin-top: 2px;">Job Title</div>
 
@@ -158,10 +171,10 @@
             <div style="margin-top: 12px;">
               <a href="https://codeway.co" target="_blank" style="color:#111; text-decoration:none; font-weight:600;">codeway.co</a>
             </div>
-          </td>
 
-          <td style="vertical-align: top;">
-            <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="86" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+            <div style="margin-top: 12px;">
+              <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="62" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+            </div>
           </td>
         </tr>
       </table>
@@ -177,34 +190,44 @@
         <span id="ok3" class="ok">Kopyalandı ✅</span>
       </div>
     </div>
-    <div class="hint">Özellik: Logo pack 01, GPTW badge var, slogan var.</div>
+    <div class="hint">Özellik: Logo pack 01, sosyal ikonlar (uç ortalı), altta küçük GPTW badge, slogan var.</div>
     <div class="sigbox" id="sig3">
       <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.35; color:#111;">
         <tr>
-          <td style="vertical-align: top; padding-right: 16px;">
-            <img src="https://i.ibb.co/ZpdvxSfV/logo-pack-01.png" width="120" alt="Codeway" style="display:block; border:0; outline:none;">
-            <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px;">
+          <td style="vertical-align: top; padding-right: 16px; width: 160px;">
+            <table cellpadding="0" cellspacing="0" border="0" style="width:160px;">
               <tr>
-                <td style="padding-right: 8px;">
-                  <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
-                  </a>
+                <td style="text-align:center;">
+                  <img src="https://i.ibb.co/ZpdvxSfV/logo-pack-01.png" width="140" alt="Codeway" style="display:block; border:0; outline:none; margin:0 auto;">
                 </td>
-                <td style="padding-right: 8px;">
-                  <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
-                  </a>
-                </td>
-                <td>
-                  <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
-                  </a>
+              </tr>
+              <tr>
+                <td style="text-align:center; padding-top: 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
+                    <tr>
+                      <td style="padding-right: 8px;">
+                        <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                      <td style="padding-right: 8px;">
+                        <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
           </td>
 
-          <td style="vertical-align: top; padding-right: 16px;">
+          <td style="vertical-align: top;">
             <div style="font-size: 16px; font-weight: 700;">Name Surname</div>
             <div style="font-weight: 600; margin-top: 2px;">Job Title</div>
 
@@ -224,10 +247,10 @@
               <a href="https://codeway.co" target="_blank" style="color:#111; text-decoration:none; font-weight:600;">codeway.co</a><br>
               <span style="color:#666;">Powering Ambitious Builders at Scale.</span>
             </div>
-          </td>
 
-          <td style="vertical-align: top;">
-            <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="86" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+            <div style="margin-top: 12px;">
+              <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="62" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+            </div>
           </td>
         </tr>
       </table>
@@ -243,34 +266,44 @@
         <span id="ok4" class="ok">Kopyalandı ✅</span>
       </div>
     </div>
-    <div class="hint">Özellik: Logo pack 01, GPTW badge var, slogan yok (en kısa).</div>
+    <div class="hint">Özellik: Logo pack 01, sosyal ikonlar (uç ortalı), GPTW badge yok (en kısa).</div>
     <div class="sigbox" id="sig4">
       <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.35; color:#111;">
         <tr>
-          <td style="vertical-align: top; padding-right: 16px;">
-            <img src="https://i.ibb.co/ZpdvxSfV/logo-pack-01.png" width="120" alt="Codeway" style="display:block; border:0; outline:none;">
-            <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px;">
+          <td style="vertical-align: top; padding-right: 16px; width: 160px;">
+            <table cellpadding="0" cellspacing="0" border="0" style="width:160px;">
               <tr>
-                <td style="padding-right: 8px;">
-                  <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
-                  </a>
+                <td style="text-align:center;">
+                  <img src="https://i.ibb.co/ZpdvxSfV/logo-pack-01.png" width="140" alt="Codeway" style="display:block; border:0; outline:none; margin:0 auto;">
                 </td>
-                <td style="padding-right: 8px;">
-                  <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
-                  </a>
-                </td>
-                <td>
-                  <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
-                    <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
-                  </a>
+              </tr>
+              <tr>
+                <td style="text-align:center; padding-top: 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
+                    <tr>
+                      <td style="padding-right: 8px;">
+                        <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                      <td style="padding-right: 8px;">
+                        <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
+                          <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
           </td>
 
-          <td style="vertical-align: top; padding-right: 16px;">
+          <td style="vertical-align: top;">
             <div style="font-size: 16px; font-weight: 700;">Name Surname</div>
             <div style="font-weight: 600; margin-top: 2px;">Job Title</div>
 
@@ -290,25 +323,19 @@
               <a href="https://codeway.co" target="_blank" style="color:#111; text-decoration:none; font-weight:600;">codeway.co</a>
             </div>
           </td>
-
-          <td style="vertical-align: top;">
-            <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="86" alt="Great Place to Work" style="display:block; border:0; outline:none;">
-          </td>
         </tr>
       </table>
     </div>
   </div>
 
   <p class="note">
-    Eğer Gmail yine “signature is too long” derse: en hızlı kısaltma <code>telefon</code> satırını kaldırmak veya <code>address</code> satırını tek satıra indirmek.
+    Eğer Gmail “signature is too long” derse: en hızlı kısaltma <code>telefon</code> satırını kaldırmak veya <code>address</code> satırını tek satıra indirmek.
   </p>
-
 </div>
 
 <script>
   function copySig(sigId, okId) {
     const el = document.getElementById(sigId);
-    // Copy as HTML (rich) + plain text fallback
     const html = el.innerHTML.trim();
     const text = el.innerText.trim();
 
@@ -325,7 +352,6 @@
       ok.style.display = "inline";
       setTimeout(() => ok.style.display = "none", 1200);
     }).catch(() => {
-      // Fallback: select node + execCommand
       const range = document.createRange();
       range.selectNodeContents(el);
       const sel = window.getSelection();
