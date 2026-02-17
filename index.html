@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Codeway Email Signature Templates</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color:#111; }
+    .wrap { max-width: 980px; margin: 0 auto; }
+    h1 { font-size: 20px; margin: 0 0 8px; }
+    p { margin: 6px 0 10px; color:#333; }
+    .card { border: 1px solid #e5e5e5; border-radius: 12px; padding: 16px; margin: 14px 0; }
+    .row { display:flex; align-items:center; justify-content:space-between; gap: 12px; flex-wrap:wrap; }
+    .title { font-weight: 700; }
+    button { border: 1px solid #ddd; background:#fff; border-radius: 10px; padding: 8px 12px; cursor:pointer; }
+    button:active { transform: translateY(1px); }
+    .hint { font-size: 12px; color:#666; margin-top: 6px; }
+    .ok { font-size: 12px; color:#0a7a0a; display:none; }
+    .sigbox { padding: 12px; border: 1px dashed #ddd; border-radius: 10px; background:#fafafa; overflow-x:auto; }
+    .note { font-size: 12px; color:#555; }
+    code { background:#f3f3f3; padding:2px 5px; border-radius:6px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Codeway Email Signature Templates</h1>
+  <p>Adım: İstediğin layout için <b>Copy</b> → Gmail <b>Settings → Signature</b> alanına yapıştır → <b>Save Changes</b>.</p>
+  <p class="note">Not: Bu sayfadaki “Copy” butonu HTML’i panoya kopyalar. Gmail’de ekstra “link ekle” işlemi gerekmez.</p>
+
+  <!-- Common links -->
+  <script>
+    const LINKS = {
+      ig: "https://www.instagram.com/codeway/?hl=en",
+      yt: "https://www.youtube.com/@codewaystudios",
+      li: "https://www.linkedin.com/company/codeway",
+      web: "https://codeway.co"
+    };
+  </script>
+
+  <!-- ===== Layout 1 ===== -->
+  <div class="card">
+    <div class="row">
+      <div class="title">Layout 1</div>
+      <div>
+        <button onclick="copySig('sig1','ok1')">Copy</button>
+        <span id="ok1" class="ok">Kopyalandı ✅</span>
+      </div>
+    </div>
+    <div class="hint">Özellik: Sol logo + sosyal ikonlar, sağ metin, sağda GPTW badge, slogan var.</div>
+    <div class="sigbox" id="sig1">
+      <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.35; color:#111;">
+        <tr>
+          <td style="vertical-align: top; padding-right: 16px;">
+            <img src="https://i.ibb.co/XrG010pg/logo.png" width="110" alt="Codeway" style="display:block; border:0; outline:none;">
+            <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px;">
+              <tr>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td style="vertical-align: top; padding-right: 16px;">
+            <div style="font-size: 16px; font-weight: 700;">Name Surname</div>
+            <div style="font-weight: 600; margin-top: 2px;">Job Title</div>
+
+            <div style="margin-top: 12px;">
+              <div>
+                <a href="mailto:xxx@codeway.co" style="color:#111; text-decoration:none;">xxx@codeway.co</a>
+              </div>
+              <div style="margin-top: 2px;">+XXX XXX XX XX <span style="color:#666;">(Optional)</span></div>
+            </div>
+
+            <div style="margin-top: 12px;">
+              Ferko Signature Levent<br>
+              Kat 23, 34394, IST
+            </div>
+
+            <div style="margin-top: 12px;">
+              <a href="https://codeway.co" target="_blank" style="color:#111; text-decoration:none; font-weight:600;">codeway.co</a><br>
+              <span style="color:#666;">Powering Ambitious Builders at Scale.</span>
+            </div>
+          </td>
+
+          <td style="vertical-align: top;">
+            <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="86" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== Layout 2 ===== -->
+  <div class="card">
+    <div class="row">
+      <div class="title">Layout 2</div>
+      <div>
+        <button onclick="copySig('sig2','ok2')">Copy</button>
+        <span id="ok2" class="ok">Kopyalandı ✅</span>
+      </div>
+    </div>
+    <div class="hint">Özellik: Alternatif logo, GPTW badge var, slogan yok (daha kısa).</div>
+    <div class="sigbox" id="sig2">
+      <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.35; color:#111;">
+        <tr>
+          <td style="vertical-align: top; padding-right: 16px;">
+            <img src="https://i.ibb.co/bjPG8Ljc/logo-pack-03-1.png" width="120" alt="Codeway" style="display:block; border:0; outline:none;">
+            <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px;">
+              <tr>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td style="vertical-align: top; padding-right: 16px;">
+            <div style="font-size: 16px; font-weight: 700;">Name Surname</div>
+            <div style="font-weight: 600; margin-top: 2px;">Job Title</div>
+
+            <div style="margin-top: 12px;">
+              <div>
+                <a href="mailto:xxx@codeway.co" style="color:#111; text-decoration:none;">xxx@codeway.co</a>
+              </div>
+              <div style="margin-top: 2px;">+XXX XXX XX XX <span style="color:#666;">(Optional)</span></div>
+            </div>
+
+            <div style="margin-top: 12px;">
+              Ferko Signature Levent<br>
+              Kat 23, 34394, IST
+            </div>
+
+            <div style="margin-top: 12px;">
+              <a href="https://codeway.co" target="_blank" style="color:#111; text-decoration:none; font-weight:600;">codeway.co</a>
+            </div>
+          </td>
+
+          <td style="vertical-align: top;">
+            <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="86" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== Layout 3 ===== -->
+  <div class="card">
+    <div class="row">
+      <div class="title">Layout 3</div>
+      <div>
+        <button onclick="copySig('sig3','ok3')">Copy</button>
+        <span id="ok3" class="ok">Kopyalandı ✅</span>
+      </div>
+    </div>
+    <div class="hint">Özellik: Logo pack 01, GPTW badge var, slogan var.</div>
+    <div class="sigbox" id="sig3">
+      <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.35; color:#111;">
+        <tr>
+          <td style="vertical-align: top; padding-right: 16px;">
+            <img src="https://i.ibb.co/ZpdvxSfV/logo-pack-01.png" width="120" alt="Codeway" style="display:block; border:0; outline:none;">
+            <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px;">
+              <tr>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td style="vertical-align: top; padding-right: 16px;">
+            <div style="font-size: 16px; font-weight: 700;">Name Surname</div>
+            <div style="font-weight: 600; margin-top: 2px;">Job Title</div>
+
+            <div style="margin-top: 12px;">
+              <div>
+                <a href="mailto:xxx@codeway.co" style="color:#111; text-decoration:none;">xxx@codeway.co</a>
+              </div>
+              <div style="margin-top: 2px;">+XXX XXX XX XX <span style="color:#666;">(Optional)</span></div>
+            </div>
+
+            <div style="margin-top: 12px;">
+              Ferko Signature Levent<br>
+              Kat 23, 34394, IST
+            </div>
+
+            <div style="margin-top: 12px;">
+              <a href="https://codeway.co" target="_blank" style="color:#111; text-decoration:none; font-weight:600;">codeway.co</a><br>
+              <span style="color:#666;">Powering Ambitious Builders at Scale.</span>
+            </div>
+          </td>
+
+          <td style="vertical-align: top;">
+            <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="86" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== Layout 4 ===== -->
+  <div class="card">
+    <div class="row">
+      <div class="title">Layout 4</div>
+      <div>
+        <button onclick="copySig('sig4','ok4')">Copy</button>
+        <span id="ok4" class="ok">Kopyalandı ✅</span>
+      </div>
+    </div>
+    <div class="hint">Özellik: Logo pack 01, GPTW badge var, slogan yok (en kısa).</div>
+    <div class="sigbox" id="sig4">
+      <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.35; color:#111;">
+        <tr>
+          <td style="vertical-align: top; padding-right: 16px;">
+            <img src="https://i.ibb.co/ZpdvxSfV/logo-pack-01.png" width="120" alt="Codeway" style="display:block; border:0; outline:none;">
+            <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px;">
+              <tr>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.instagram.com/codeway/?hl=en" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/cSZmdrB8/instagram.png" width="22" height="22" alt="Instagram" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.youtube.com/@codewaystudios" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/jZfvNYHf/youtube.png" width="22" height="22" alt="YouTube" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/company/codeway" target="_blank" style="text-decoration:none;">
+                    <img src="https://i.ibb.co/DHJwTpyy/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block; border:0; outline:none;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td style="vertical-align: top; padding-right: 16px;">
+            <div style="font-size: 16px; font-weight: 700;">Name Surname</div>
+            <div style="font-weight: 600; margin-top: 2px;">Job Title</div>
+
+            <div style="margin-top: 12px;">
+              <div>
+                <a href="mailto:xxx@codeway.co" style="color:#111; text-decoration:none;">xxx@codeway.co</a>
+              </div>
+              <div style="margin-top: 2px;">+XXX XXX XX XX <span style="color:#666;">(Optional)</span></div>
+            </div>
+
+            <div style="margin-top: 12px;">
+              Ferko Signature Levent<br>
+              Kat 23, 34394, IST
+            </div>
+
+            <div style="margin-top: 12px;">
+              <a href="https://codeway.co" target="_blank" style="color:#111; text-decoration:none; font-weight:600;">codeway.co</a>
+            </div>
+          </td>
+
+          <td style="vertical-align: top;">
+            <img src="https://i.ibb.co/RTc2vMZ7/gptw.png" width="86" alt="Great Place to Work" style="display:block; border:0; outline:none;">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <p class="note">
+    Eğer Gmail yine “signature is too long” derse: en hızlı kısaltma <code>telefon</code> satırını kaldırmak veya <code>address</code> satırını tek satıra indirmek.
+  </p>
+
+</div>
+
+<script>
+  function copySig(sigId, okId) {
+    const el = document.getElementById(sigId);
+    // Copy as HTML (rich) + plain text fallback
+    const html = el.innerHTML.trim();
+    const text = el.innerText.trim();
+
+    const blobHtml = new Blob([html], { type: "text/html" });
+    const blobText = new Blob([text], { type: "text/plain" });
+
+    const item = new ClipboardItem({
+      "text/html": blobHtml,
+      "text/plain": blobText
+    });
+
+    navigator.clipboard.write([item]).then(() => {
+      const ok = document.getElementById(okId);
+      ok.style.display = "inline";
+      setTimeout(() => ok.style.display = "none", 1200);
+    }).catch(() => {
+      // Fallback: select node + execCommand
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      document.execCommand("copy");
+      sel.removeAllRanges();
+      const ok = document.getElementById(okId);
+      ok.style.display = "inline";
+      setTimeout(() => ok.style.display = "none", 1200);
+    });
+  }
+</script>
+</body>
+</html>
